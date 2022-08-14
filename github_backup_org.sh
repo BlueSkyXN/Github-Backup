@@ -18,7 +18,7 @@ fi
 url=""
 username=""
 if [ $# == 1 ];then
-	url="https://github.com/Skyimg?tab=repositories"
+	url="https://github.com/BlueSkyXN-Backup?tab=repositories"
 #手动修改上面一行的用户名（如果有识别错误的话）
 	username=${url%\?*}
 	username=${username##*/}
@@ -29,7 +29,7 @@ fi
 
 patten1="a href=\"/"${username}"/"
 #r_path=`curl "${url}" | grep "${patten1}"`
-r_path=`curl "https://github.com/orgs/Skyimg/repositories" | grep "Skyimg"`
+r_path=`curl "https://github.com/orgs/BlueSkyXN-Backup/repositories" | grep "BlueSkyXN-Backup"`
 #请根据自己的组织名修改的上面一行/orgs/后面的名字和grep后面的名字
 #同时命令仍然是比如 ./github_backup.sh https://github.com/Skyimg?tab=repositories 不需要修改（注意文件名）
 # get repositories url path
